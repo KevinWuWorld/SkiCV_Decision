@@ -1,0 +1,32 @@
+tracker_type: botsort
+
+# Detection/Association thresholds 
+track_high_thresh: 0.35
+track_low_thresh: 0.05 
+new_track_thresh: 0.40 
+match_thresh: 0.7 
+fuse_score: true  
+
+# Track persistence
+track_buffer: 90         
+lost_track_buffer: 90       # Buffer for lost tracks
+
+# Re-identification 
+with_reid: true  
+model: auto  
+proximity_thresh: 0.5       # distance threshold for re-ID
+appearance_thresh: 0.25 
+
+# Motion compensation
+gmc_method: sparseOptFlow 
+
+# Motion model
+kalman_format: 'xywh'      
+std_weight_position: 1/20   # Position uncertainty
+std_weight_velocity: 1/160  # Velocity uncertainty
+
+# Frame rate considerations
+frame_rate: 30
+
+# Additional params for compatibility
+cmc_method: sparseOptFlow 

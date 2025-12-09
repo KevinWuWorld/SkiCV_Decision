@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+
+# Ignore all mp4 videos
+*.mp4
+# Ignore all PyTorch model weights
+*.pth
